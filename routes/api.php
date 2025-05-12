@@ -26,7 +26,7 @@ Route::post('/login', [AuthController::class, 'login'])->name('login');
 Route::post('/register', [AuthController::class, 'register'])->name('register');
 Route::post('/admin/login', [AuthController::class, 'adminLogin'])->name('admin.login');
 
-// Public movie routes
+// Public movie route
 Route::get('/phim', [PhimController::class, 'index']); // List all movies
 Route::get('/phim-dang-chieu', [PhimController::class, 'getPhimDangChieu']); // List now showing movies
 Route::get('/phim-sap-chieu', [PhimController::class, 'getPhimSapChieu']); // List upcoming movies
